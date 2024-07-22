@@ -1,0 +1,62 @@
+/* Add styles to your CSS file */
+
+.all-students-table {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+  
+.all-students-table:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+  
+.std_all_performance_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+.th_at_std_perform, .td_at_std_perform {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+  
+.th_at_std_perform {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+  
+.th_at_std_perform:hover {
+    background-color: #0bb511;
+}
+  
+.td_at_std_perform a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: all 0.3s ease-in-out;
+}
+  
+.td_at_std_perform a:hover {
+    color: #23527c;
+}
+  
+.back-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.back-button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

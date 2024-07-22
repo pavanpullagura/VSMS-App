@@ -1,0 +1,25 @@
+.hero{
+    margin: 50px 0px;
+    border: 2px solid transparent;
+    background-image: url('../images//Vcube\ Hero\ image.png');
+    background-size: cover;
+    box-shadow: 0px 0px 10px 10px rgb(16, 1, 148);
+    height: 400px;
+}
+.startvideo h1{
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    font-size: 3rem;
+    color: rgb(255, 102, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.startvideo p{
+    position: absolute;
+    top: 700px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    left: 300px;
+    font-family: 'Times New Roman', Times, serif ;
+}

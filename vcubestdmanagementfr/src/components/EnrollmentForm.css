@@ -1,0 +1,173 @@
+.enrollment_form_div{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.enrollment_form_for_new_students {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.enrollment_form_for_new_students div {
+    width: 48%;
+    margin-bottom: 20px;
+    position: relative;
+}
+  
+  /* Input fields and labels */
+.enroll_form_input_fields,.enroll_form_select_fields {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+.enroll_form_input_divs .enroll_form_labels {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    font-size: 18px;
+    color: #c1acf0;
+    transition: all 0.2s ease-out;
+    pointer-events: none; 
+}
+.enroll_form_select_fields{
+    position: relative;
+    right: 10px;
+}
+/* 
+  input:focus + label,
+  textarea:focus + label,
+  select:focus + label,
+  input:not(:placeholder-shown) + label,
+  textarea:not(:placeholder-shown) + label,
+  select:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+  }*/
+.enroll_form_input_fields:focus + .enroll_form_labels,
+.enroll_form_input_fields:not(:placeholder-shown) + .enroll_form_labels,
+.enroll_form_select_fields:focus + .enroll_form_labels,
+.enroll_form_select_fields:not(:placeholder-shown) + .enroll_form_labels {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+    background-color: #fff;
+}
+.enroll_form_select_fields:focus + .enroll_form_labels,
+.enroll_form_select_fields:not(:placeholder-shown) + .enroll_form_labels {
+    top: -10px;
+    left: 15px; /* Adjust left position for select fields */
+}
+/* Ensure labels remain above input when there is content */
+.enroll_form_input_fields:not(:placeholder-shown) + .enroll_form_labels,
+.enroll_form_select_fields:not(:placeholder-shown) + .enroll_form_labels {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+  
+  /* Enroll button styling */
+#enroll_btn{
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#enroll_btn:hover {
+    border-color: #007bff;
+    background-color: #fff;
+    color: #007bff;
+}
+
+#enroll_btn:after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, #007bff 10%, transparent 10.01%);
+    background-size: 10% 10%;
+    transition: all 0.3s;
+    opacity: 0;
+}
+  
+#enroll_btn:active:after {
+    opacity: 1;
+    transition: 0s;
+    animation: sparkle 1s infinite linear;
+}
+  
+@keyframes sparkle {
+    0% { background-position: 50% 50%; }
+    100% { background-position: 0% 0%; }
+}
+  
+.enrolling-button {
+    position: relative;
+}
+  
+.enrolling-button span {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+  
+.enrolling-button.enrolling span {
+    opacity: 0;
+}
+  
+.enrolling-button.enrolling:after {
+    content: "Enrolling...";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+.success-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    animation: slideIn 0.5s ease forwards;
+}
+  
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+}
+  
+  

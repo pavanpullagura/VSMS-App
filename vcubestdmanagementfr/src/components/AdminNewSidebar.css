@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    position: relative;
+}
+  
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 0px 20px;
+    transition: width 0.3s ease;
+}
+  
+.sidebar.open {
+    width: 70px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+li {
+    margin-bottom: 5px;
+}
+  
+a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+  
+a i {
+    margin-right: 10px;
+}
+  
+.submenu {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.submenu.open {
+    display: block;
+}
+  
+.submenu li {
+    margin-bottom: 5px;
+}
+  
+.submenu a {
+    padding: 5px 20px;
+}
+  
+.main {
+    flex: 1;
+    padding: 5px;
+    background-color: #eee;
+    transition: margin-left 0.3s ease;
+}
+  
+.main.open {
+    margin-left: 70px;
+}
+  
+.rotate-180 {
+    transform: rotate(180deg);
+}
+.menu-container {
+    overflow-y: auto;
+    max-height: 400px; /* adjust this value to set the maximum height of the menu */
+    padding: 10px;
+  }
+  
+  .menu-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .menu-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  .menu-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }

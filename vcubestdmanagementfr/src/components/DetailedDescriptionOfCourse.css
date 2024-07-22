@@ -1,0 +1,12 @@
+.course-detail-div{
+    border: 2px solid firebrick;
+    background-color: rgb(255, 136, 0);
+    
+}
+.coursedesc{
+    font-size: 1rem;
+}
+.coursedesc h3{
+    font-size: 2rem;
+    text-align: center;
+}

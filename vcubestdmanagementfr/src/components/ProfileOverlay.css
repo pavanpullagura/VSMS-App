@@ -1,0 +1,513 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.admin_profile_overlay_outer_div{
+    padding-top: 50px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+.overlayadjustmentdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.std_profile_update_form {
+    font-size: 1.2rem;
+    max-width: 500px;
+    height: 450px;
+    padding: 20px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.std_profile_update_form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.std_profile_update_form input[type="text"],
+.std_profile_update_form input[type="email"],
+.std_profile_update_form input[type="number"]{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.std_profile_update_form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+
+.update_btn {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    background: #1aff00;
+    color: #ffffff;
+    border-radius: 100px;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+  
+.profile_close_btn{
+    position: relative;
+    padding: 5px 15px;
+    margin: 20px;
+    background-color: rgb(253, 69, 69);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+.profile_close_btn:hover{
+    background-color: rgb(219, 14, 14);
+    color: #ffffff;
+}
+  
+.update_btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #60ff0b;
+    border-radius: 100px;
+    transition: all 1s;
+    z-index: -1;
+}
+  
+.update_btn:hover:before {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+  
+.update_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+  
+.update_btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+/*
+.std_profile_update_form button[type="submit"]:hover {
+    background-color: #0a8a0e;
+    color: white;
+}
+*/
+.profile-overlay #closebtn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Drop Zone */
+::selection {
+    background: #2d59fa;
+    color: #f2f7fe;
+}
+
+.dropzone-area {
+    padding: 1rem;
+    position: relative;
+    margin-top: 1.5rem;
+    min-height: 16rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #d4dce6;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dropzone-area .file-info {
+    font-size: 1.1rem;
+}
+
+.dropzone-area [type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone-area:hover {
+    background: #f2f7fe;
+}
+
+/* admin profile input fields style*/
+
+.profileinputdiv {
+    position: relative;
+    padding: 0.9375rem 0 0;
+    margin-bottom: 0.5rem;
+}
+
+.adminprofileinputfield {
+    font-size: 1.2rem;
+    color: #1f2346;
+    padding: 0.375rem 0;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    line-height: 2rem;
+    height: 2rem;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    vertical-align: middle;
+    padding-bottom: 0.7rem;
+    border-bottom: 3px solid #1d1d1d;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.adminprofileinputfield::placeholder {
+    color: transparent;
+}
+
+.adminprofilelabeltag {
+    user-select: none;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    font-size: 1.5rem;
+    color: #1f2346;
+    transition: 0.3s;
+}
+
+.profileinputdiv:focus-within .adminprofilelabeltag,
+.adminprofileinputfield:valid ~ .adminprofilelabeltag {
+    top: -0.025rem;
+    font-size: 1rem;
+    color: #605dff;
+    background-color: #fff;
+}
+
+.adminprofileinputfield:focus {
+    border-bottom: 3px solid #605dff;
+}
+.changepass_atprofileoverlay{
+    margin: 100px 0px 0px 0px;
+}
+.imageuploadbtn_at_adminprofile{
+    margin-top: 30px;
+}
+.adminprofileimageinputfield{
+    font-size: 1.2rem;
+    color: #1f2346;
+    padding: 0.375rem 0;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    line-height: 2rem;
+    height: 2rem;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    vertical-align: middle;
+    padding-bottom: 3rem;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.profile-overlay.visible {
+    display: block;
+}
+
+.overlayadjustmentdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.std_profile_update_form {
+    max-width: 400px;
+    padding: 20px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.std_profile_update_form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.std_profile_update_form input[type="text"],.std_profile_update_form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.std_profile_update_form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.std_profile_update_form button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.profile-overlay #closebtn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+::selection{
+    background: #2d59fa;
+    color: #f2f7fe;
+}
+.dropzone-box{
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 36rem;
+    border: 1px solid #edf1f3;
+    width: 100%;
+    background: #fff;
+}
+
+.dropzone-box h2{
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: #211e30;
+}
+.dropzone-box p{
+    font-size: 1.15rem;
+    color: #d3d3d3;
+}
+.dropzone-area{
+    padding: 1rem;
+    position: relative;
+    margin-top: 1.5rem;
+    min-height: 16rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed #d4dce6;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.dropzone-description{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.dropzone-area .file-info{
+    font-size: 1.1rem;
+}
+
+.dropzone-area [type="file"]{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.dropzone-area .file-upload-icon svg{
+    height: 6rem;
+    max-width: 6rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    stroke: #211e30;
+}
+.dropzone-area:hover{
+    background: #f2f7fe;
+}
+.dropzone-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.dropzone-actions button{
+    flex-grow: 1;
+    min-height: 3rem;
+    font-size: 1.2rem;
+    border: none;
+    transition: background 0.3s ease;
+}
+.dropzone-help{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.dropzone-actions button[type="reset"]{
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #0a090c;
+    background: #feffff;
+    cursor: pointer;
+    border: 1px solid #d4dce6;
+    transition: all 0.3s ease;
+}
+.dropzone-actions button[type="reset"]:hover{
+    border: 1px solid #2d59fa;
+}
+
+.dropzone-actions button[type="submit"]{
+    background: #2d59fa;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #f2f7fe;
+    border: none;
+    cursor: pointer;
+}
+
+.dropzone-actions button[type="submit"]:hover{
+    background: #0037ff;
+}
+*/
+
+/*
+.profile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+  
+.profile-overlay .std_profile_update_form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.profile-overlay label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.profile-overlay input[type="text"],.profile-overlay input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+  
+.profile-overlay button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.profile-overlay button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.profile-overlay #closebtn{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.profile-overlay.visible {
+    display: block;
+  }
+  
+.profile-overlay {
+    display: none;
+}
+    */

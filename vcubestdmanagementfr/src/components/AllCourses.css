@@ -1,0 +1,82 @@
+/* AllCourses.css */
+
+.courses {
+    padding: 20px;
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white; /* Assuming you want text to be readable over the image */
+    background-color: rgba(160, 151, 151, 0.5); /* Optional: darken background for better text contrast */
+    background-blend-mode: darken; /* Optional: darken background for better text contrast */
+}
+
+.course h3 {
+    margin: 0;
+}
+.course:hover{
+    box-shadow: 0px 1px 10px 5px rgb(200, 255, 0);
+    transition: .5s ease-out;
+    font-size: 1.55rem;
+}
+.course a button:hover{
+    font-size: 1.2rem;
+    transition: .50s ease-out;
+}
+.cta {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+/*
+.courses{
+    border: 1px solid transparent;
+    text-align: center;
+    background-image: url('../images/5172658.jpg');
+    color: white;
+}
+.courses:hover{
+    box-shadow: 0px 1px 10px 5px rgb(255, 0, 0);
+}
+.course-list{
+    text-align: left;
+    display: flex;
+    border: 2px solid transparent;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    transition: .25s ease-out;
+}
+.course{
+    border: 2px solid transparent;
+    width: 150px;
+    padding: 50px;
+    
+}
+
+.course:hover{
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 1px 10px 5px blue;
+    transition: .5s ease-out;
+    font-size: 1.55rem;
+}
+.course a button:hover{
+    font-size: 1.2rem;
+    transition: .50s ease-out;
+}
+*/

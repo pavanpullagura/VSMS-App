@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background: #ffffff;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    background: #4734d7;
+    background-image: url('.././images/11fd440ed24599f3816b6bf74a79d3c2.jpg');
+    height: 100%;
+    position: fixed;
+    transition: width 0.3s ease;
+}
+
+.sidebar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+}
+
+.sidebar-header {
+    height: 154px;
+    background: rgb(0 0 0 /15%);
+}
+
+.sidebar_user_details_div {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminusername {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar-burger {
+    display: grid;
+    place-items: center;
+    color: #f9f9f9;
+    margin-right: 5px;
+}
+
+.sidebar-menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+}
+
+.sidebar-button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 56px;
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.handle {
+    position: absolute;
+    z-index: 100;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.handle :is(:hover, :active) {
+    background: rgb(255, 255, 255 /10%);
+    cursor: col-resize;
+}
+
+.sidebar-sub-button {
+    background-color: transparent;
+    padding-left: 150px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.sidebar-sub-button:hover {
+    background-color: #4a5568;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.sidebar-item.open .dropdown-content {
+    display: block;
+    max-height: 200px;
+}
+
+.sidebar-item {
+    position: relative;
+}

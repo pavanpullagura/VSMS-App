@@ -1,0 +1,138 @@
+/*.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    height: 100vh;
+    background-image: url('../.././images/3d-data-communications-background-with-flowing-particle-waves.jpg');
+    background-position-y: 47%;
+    padding: 20px;
+    z-index: 1;
+  }
+  
+  .vcubelogo {
+    filter: drop-shadow(2px 0px 5px rgb(255, 255, 255));
+    margin-bottom: 20px;
+  }
+  
+  .sidebar_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: rgb(255, 81, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .sidebar_item {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar_item a {
+    color: rgb(255, 81, 0);
+    text-decoration: none;
+  }
+  
+  .sidebar_item a:hover {
+    color: rgb(200, 255, 0);
+    text-decoration: underline;
+  }
+  
+  .profile {
+    margin-top: 5px;
+    border: 3px solid rgb(5, 255, 5);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .dropdown_wrapper {
+    width: 240px;
+    top: 50px;
+    left: 0;
+    position: absolute;
+    border-radius: 8px;
+    border: 1px solid #5a678c;
+    display: flex;
+    flex-direction: column;
+    animation: fadeOutAnimation ease-in-out 1s backwards;
+    z-index: 1000;
+    background-color: white;
+  }
+  
+  .dropdown_wrapper--fade-in {
+    animation: fadeInAnimation ease-in-out 0.5s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      width: 160px;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      width: 240px;
+    }
+  }
+  
+  @keyframes fadeOutAnimation {
+    0% {
+      opacity: 100;
+      visibility: visible;
+      width: 240px;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+      width: 100px;
+    }
+  }
+  
+  .dropdown_group {
+    padding: 10px;
+    margin: 0;
+    text-transform: lowercase;
+    text-align: center;
+    color: green;
+    overflow-x: hidden;
+  }
+  
+  .fullname {
+    text-transform: uppercase;
+    color: orangered;
+    font-size: 1.3rem;
+  }
+  
+  .divider {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .menu {
+    color: rgb(255, 81, 0);
+    position: relative;
+    list-style-type: none;
+    padding: 0px;
+    margin: -10px;
+    top: -20px;
+    z-index: 1;
+    gap: 0;
+  }
+  
+  .menu > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 8px;
+    width: 100%;
+  }
+  
+  .menu > li:hover, .menu > li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(200, 255, 0);
+  }*/

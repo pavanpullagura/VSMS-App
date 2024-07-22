@@ -1,0 +1,136 @@
+body{
+    background-image: url("./images/vector-OCT-2020-66_generated.jpg");
+}
+.navbar {
+    background-color: rgb(76, 4, 245);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;   
+    height: px; 
+}
+
+  
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+  
+.navbar li {
+    font-size: rem;    font-weight: 500;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+  
+.navbar a:hover {
+    color: #3af701;
+    transition: ease 1s;
+}
+  
+.navbar ul li .login-options li{
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    width: 100px;
+    background-color: transparent;
+    padding: 0px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+  
+.navbar ul li .login-options .login-option {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+  
+.login-options a {
+    color: Black;
+}
+  
+.login-options a:hover {
+    color: #78f702;
+}
+/* drop down style*/
+
+
+  
+.sidebar {
+    background-color: rgba(98, 0, 255, 0.137);
+    background: linear-gradient(rgb(76, 4, 245),rgb(76, 4, 245),rgba(0, 0, 255, 0.082));
+    
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 120px;
+    left: 0;
+    border-right: 1px solid #dddddd00;
+    border-top-right-radius: -100px;
+    
+}
+
+  
+
+.sidebar img{
+    padding:22px 10px
+}
+  
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.sidebar li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    overflow: hidden;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding:20px
+}
+.sidebar li:hover{
+    color: orange;
+    background-color: #1e9f01;
+    border-top-left-radius: 25px;
+    transition: 0.55s ease;
+}
+  
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+  
+.sidebar a:hover {
+    color: #fa7304;
+    background-color: #1e9f01;
+    border-top-left-radius: 25px;
+    transition: 0.55s ease;
+}
+  
+.sidebar a.active {
+    color: #aa45e9;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+  
+.sidebar a.active:hover {
+    color: #23527c;
+}

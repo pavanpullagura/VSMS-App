@@ -1,0 +1,65 @@
+.stdsattendancetablediv{
+    background: linear-gradient(rgb(253, 253, 253),rgb(243, 217, 160),#ffffff);
+    margin: 50px 0px;
+    padding: 50px 0px;
+}
+.stdsattendancetablediv tr:hover{
+    background-color: rgb(246, 219, 62);
+}
+
+
+.select_date_div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.month-year-selector {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.attendance-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.std_attendance_responsive_div {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.attendance_table_for_staff {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px; /* Ensure minimum width to handle many columns */
+}
+
+.attendance_table_for_staff, .table_head_att, .table_data_att {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table_head_att {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1385c7;
+    color: white;
+}
+
+.table_data_att {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .attendance_table_for_staff, .table_head_att, .table_data_att {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
+}
+
+  

@@ -1,0 +1,72 @@
+.Attendance {
+    text-align: center;
+    padding: 20px;
+  }
+.Attendance label{
+    font-size: 1.8rem;
+    color:rgb(253, 101, 0);
+}
+.Attendance select{
+    font-size: 1.8rem;
+}
+.stdAttendance  {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+.stdAttendance label{
+  position: relative;
+  font-size: 1.6rem;
+  color:rgb(253, 101, 0);
+}
+  
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+  
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+.attendance_details_table_header{
+  color: rgb(170, 0, 255);
+  background-color: rgb(255, 153, 0);
+}
+
+.stdSelfAttendanceTable tbody tr:hover{
+  background-color: rgb(90, 243, 76);
+}
+.stdAttendance .download_button{
+  background-color: orange;
+  color: white;
+  font-size: 1.2rem;
+  position: relative;
+  top: 60px;
+  left: 50px;
+  padding: 10px;
+}
+.download_button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.download_button svg {
+  transition: transform 0.3s ease;
+}
+
+.download_button:hover {
+  color: #4caf50;
+}
+
+.download_button:active svg {
+  transform: scale(1.2);
+}

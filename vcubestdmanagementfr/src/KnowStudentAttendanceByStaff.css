@@ -1,0 +1,183 @@
+/*
+.attendance-mark {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .present {
+    color: green;
+  }
+  
+  .absent {
+    color: red;
+  }
+    
+div {
+    margin: 10px 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+span {
+    margin: 0 5px;
+    font-size: 24px;
+}
+
+.studentattendance{
+    border: 1px solid transparent;
+    border-radius: 12px;
+    box-shadow: 20px 10px 5px 10px rgba(174, 167, 167, 0.838);
+    background-color: rgba(239, 247, 248, 0.411);
+}
+.studentattendance .stddiv h2{
+    display: inline-block;
+    margin-left: 50px;
+    font-style: oblique;
+    color: orangered;
+}
+.stddetails{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.stddetails p{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(19, 87, 5);
+}
+
+.select_date_div{
+    display: flex;
+    justify-content: center;
+}
+.select_date_div h1{
+    display: block;
+}
+.stdattendance_staffdiv{
+    display: block;
+}
+.attendance-container {
+    display: block;
+    white-space: nowrap;
+    padding: 10px;
+    background-color: orange;
+}
+
+.attendance-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.attendance-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.attendance-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.attendance-item {
+    display: block;
+    min-width: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.student-attendance {
+    margin-bottom: 20px;
+}
+
+.student-attendance h2 {
+    margin-bottom: 10px;
+}
+
+.attendance-header {
+    display: flex;
+    justify-content: space-between;
+}
+    */
+
+
+
+
+
+
+
+
+
+.select_date_div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.month-year-selector {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.attendance-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.attendance_table_for_staff {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px; /* Ensure minimum width to handle many columns */
+}
+
+.attendance_table_for_staff, .table_head_att, .table_data_att {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table_head_att {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table_data_att {
+    text-align: center;
+}
+
+.red-cross {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .attendance_table_for_staff, .table_head_att, .table_data_att {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
+}
+
+  

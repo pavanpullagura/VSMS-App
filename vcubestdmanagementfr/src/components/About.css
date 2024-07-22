@@ -1,0 +1,39 @@
+.aboutpage{
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-left: 100px;
+}
+.aboutimagediv{
+    height: 426px;
+    width: 40%;
+    background-image: url(../images/casual-hologram-job-consultant-standing.jpg);
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+.about{
+    margin-top: 8px;
+    border: 4px solid transparent;
+    background-color: #ffffff;
+    height: 420px;
+    padding-left: 10px;
+    width: 45%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.about h2, .about span{
+    font-size: 2.5rem;
+    color: rgb(0, 102, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about span{
+    color: rgb(255, 123, 0);
+}
+.about p{
+    font-size: 1rem;
+    color: rgb(82, 80, 76);
+}

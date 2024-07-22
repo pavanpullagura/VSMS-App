@@ -1,0 +1,28 @@
+.maindiv{
+    display: block;
+    position: relative;
+    left: 300px;
+}
+.subhead{
+    text-align: center;
+    color: rgb(250, 72, 7);
+    text-decoration: underline;
+}
+.subdivloginlinks{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(7, 155, 2);
+    padding: 20px 50px;
+    border-radius: 20px;
+    margin: 30px 20px;
+    width: 450px;
+
+}
+.subdivloginlinks a{
+    text-decoration: none;
+    color: white;
+}
+.subdivloginlinks i{
+    color: white;
+}

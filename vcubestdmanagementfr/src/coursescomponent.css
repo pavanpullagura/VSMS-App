@@ -1,0 +1,149 @@
+.outerbatchesdiv{
+    box-shadow: 2px 2px 2px 2px rgb(252, 107, 10);
+    padding: 50px;
+    width: 100%;
+    margin-top: 100px;
+    background-image: url('./images/44822536.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainlinksdiv{
+    display: flex;
+    justify-content: start;
+}
+
+.subdiv, .subdivforBatches{
+ display: block;
+ box-shadow: 10px 10px 10px 1px rgb(206, 201, 201);
+ margin: 10px 100px;
+ background:linear-gradient(orange,orangered);
+ width: 1000px;
+}
+.subdivforBatches{
+    width: 400px;
+}
+
+.courselinks a, .subdiv a, .subdivforBatches a{
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 50px;
+    color: white;
+    font-weight: 800;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+}
+.subdivforBatches a{
+    font-size: 1.2rem;
+}
+li{
+    list-style:none;
+    display: block;
+    margin: 50px 20px;
+}
+
+
+.courses-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courses-container h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .course-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .course-item a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .course-item a:hover {
+    color: #23527c;
+  }
+  
+  .course-item:last-child {
+    border-bottom: none;
+  }
+
+
+
+
+  .batch-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.batch-details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.batch-details-header h2 {
+    color: #333;
+    margin: 0;
+}
+
+.batch-details-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.batch-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.batch-section h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.batch-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.batch-list li {
+    margin-bottom: 10px;
+}
+
+.batch-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.batch-list a:hover {
+    text-decoration: underline;
+}

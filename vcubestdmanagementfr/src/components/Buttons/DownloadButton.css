@@ -1,0 +1,86 @@
+.download_button {
+    --default: #cacdcd;
+    --active: #00fffc;
+    position: relative;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    transform: scale(var(--s, 1));
+    transition: transform 0.2s;
+}
+.download_button:active {
+    --s: .96;
+}
+.download_button svg {
+    display: block;
+    fill: none;
+    stroke-width: var(--sw, 3px);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.download_button .circle {
+    width: 76px;
+    height: 76px;
+    transform: rotate(-90deg);
+}
+  
+.download_button .circle circle.default {
+    stroke: var(--default);
+}
+.download_button .circle circle.active {
+    stroke: var(--active);
+    stroke-dasharray: 227px;
+    stroke-dashoffset: var(--active-offset, 227px);
+    transition: stroke-dashoffset var(--all-transition, 4s) ease var(--all-delay, 0.8s);
+}
+  
+.download_button span {
+    display: block; position: absolute;
+    left: 0; right: 0;
+    text-align: center; font-size: 10px;
+    bottom: 13px; font-weight: 500;
+    color: var(--active);
+    opacity: var(--count-opacity, 0);
+    transform: translateY(var(--count-y, 4px));
+    -webkit-animation: var(--count, none) 0.3s ease forwards var(--all-delay, 4.6s);
+            animation: var(--count, none) 0.3s ease forwards var(--all-delay, 4.6s);
+    transition: opacity 0.2s ease 0.6s, transform 0.3s ease 0.6s;
+}
+  
+.download_button .icon {
+    display: block; position: absolute;
+    left: 0; top: 0;
+    overflow: hidden;
+    width: 76px; height: 76px;
+    display: flex; align-items: center; justify-content: center;
+}
+.download_button .icon svg {
+    stroke: var(--active);
+    stroke-dasharray: var(--icon-dash, none);
+    stroke-dashoffset: var(--icon-offset, 0);
+    transition: stroke-dashoffset var(--icon, none) 0.4s ease var(--icon-delay, 0.15s);
+}
+.download_button .icon svg.line {
+    width: 4px; height: 37px;
+}
+.download_button .icon .iconDiv {
+    overflow: hidden;
+}
+.download_button .icon svg.arrow {
+    width: 40px; height: 32px;
+}
+.download_button .icon svg.progress {
+    width: 444px; height: 10px;
+    --progress-dash: 0;
+    --progress-gap: 0;
+}
+.download_button .icon svg.progress path {
+    stroke-width: 8px;
+    stroke-dasharray: var(--progress-dash, 0) var(--progress-gap, 0);
+    stroke-dashoffset: 100%;
+    transition: stroke-dasharray var(--progress, none) 3.8s linear var(--all-delay, 0.8s);
+}
+  

@@ -1,0 +1,23 @@
+body{
+    background-image: url('../images/oranespectralline.jpg');
+}
+.home-page{
+    position: relative;
+    top: 100px;
+}
+.stdhomemaindiv{
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../images/32497810.jpg');
+    background-size: cover;
+}
+.stdhomeinfodiv{
+    padding: 50px;
+    backdrop-filter: blur(2px);
+}
+.chartdiv{
+    padding: 0;
+    width: 40%;
+    border-left: 2px solid Orange;
+}
+

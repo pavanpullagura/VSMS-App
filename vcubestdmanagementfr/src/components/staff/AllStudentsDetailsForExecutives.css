@@ -1,0 +1,77 @@
+.popup{
+    font-size: 1.2rem;
+}
+.fee_popup_details{
+    display: flex;
+    flex-direction: row;
+}
+.fee_popup_details li p{
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+}
+.fee_popup_details li p span{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.fee_btns{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    display: block;
+    width: 99%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+
+.fee_certificate_btns{
+    display: inline-block;
+    height: 50px;
+    background-color: #007bff;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn_style:hover{
+    background-color: #046bd8;
+    color: #fff;
+}
+.fee_close_btns{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #ff0000;
+    height: 50px;
+    font-size: 1.8rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.fee_close_btns:hover{
+    background-color: #f71616;
+    color: #fff;
+    font-size: 1.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.popup input{
+    height: 35px;
+    width: 300px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}

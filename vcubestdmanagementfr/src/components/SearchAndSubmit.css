@@ -1,0 +1,267 @@
+.mainforsearchandsubmit{
+    background-image: url('../images/orane\ spectral\ line2.jpg');
+    background-size: cover;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+.selectsearchdiv{
+    border: 1px solid green;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selectsearchdiv select, .selectsearchdiv input, .selectsearchdiv button{
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 8px;
+    
+}
+.selectsearchdiv input{
+    height: 45px;
+    width: 300px;
+    font-size: 1.5rem;
+}
+.selectsearchdiv button{
+    height: 50px;
+    width: 150px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background: rgb(4, 255, 0);
+    text-transform: uppercase;
+}
+.mainforsearchandsubmit ul{
+    font-size: 1.5rem;
+}
+.reportsubmitdiv{
+    border: 1px solid firebrick;
+}
+.enterdetailsdiv{
+    display: flex;
+    justify-content: center;
+}
+.reportsubmitdiv input, .reportsubmitdiv button{
+    height: 50px;
+    margin: 0px 20px;
+    width: 200px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    
+}
+.reportsubmitdiv button{
+    width: 300px;
+    border: none;
+    background: rgb(4, 255, 0);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.mainforStudentList{
+    position: relative;
+
+}
+.studentdatadiv{
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 24px;
+    border: 2px solid #edeef1;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px
+        rgba(0, 0, 0, 0.008) 0px 0px 0px 1px;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.student_details_for_submit_reports{
+    width: 90%;
+    border-collapse: collapse;
+}
+.student_details_for_submit_reports caption, .student_reports_table_view caption{
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 8px 0px;
+}
+.student_details_for_submit_reports th {
+    padding: 20px 16px;
+    font-size: 0.875rem;
+    color:#aa35f7;
+}
+
+.table-widget thead {
+    border-top: 2px solid #5c84fc;
+}
+
+
+.student_details_for_submit_reports td {
+    padding: 8px 16px;
+    vertical-align: middle;
+}
+.student_details_for_submit_reports tbody tr{
+    cursor: pointer;
+}
+.student_details_for_submit_reports tbody tr:nth-child(odd){
+    background-color: #f6fff8;
+}
+.student_details_for_submit_reports tbody tr:nth-child(even){
+    background-color: #f8f8b1;
+}
+.student_details_for_submit_reports tbody tr:hover{
+    background-color: #e2ecff;
+}
+.table_row_count{
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: #f1f2f6;
+    padding: 8px;
+    display: inline-block;
+    align-items: center;
+    margin-left: 16px;
+    border-radius: 8px;
+}
+
+.get_btn_inside_table, .update_btn_inside_table{
+    background-color: rgb(17, 228, 17);
+    color: white;
+    width: 80%;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+.update_btn_inside_table{
+    width: 60%;
+}
+.get_btn_inside_table:hover, .update_btn_inside_table:hover{
+    background-color: rgb(0, 148, 0);
+    transform: scale(1.05);
+    color: white;
+}
+.student_reports_table_view{
+    cursor: pointer;
+    width: 80%;
+}
+.student_reports_table_view tbody tr:nth-child(odd){
+    background-color: #fcfcdc;
+}
+.student_reports_table_view tbody tr:nth-child(even){
+    background-color: rgb(248, 255, 240);
+}
+
+
+
+
+  
+.enrollment_form_for_new_students{
+    width: fit-content;
+    margin: 20px 50px 20px ;
+    position: relative;
+    background-color: white;
+}
+.enrollment_form_div{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.enroll_form_input_fields{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+.enroll_form_input_divs .enroll_form_labels {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    font-size: 18px;
+    color: #c1acf0;
+    background-color: transparent;
+    transition: all 0.2s ease-out;
+    pointer-events: none; 
+}
+
+
+.enroll_form_input_fields:focus + .enroll_form_labels,
+.enroll_form_input_fields:not(:placeholder-shown) + .enroll_form_labels {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+/* Ensure labels remain above input when there is content */
+.enroll_form_input_fields:not(:placeholder-shown) + .enroll_form_labels {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+  
+  /* Enroll button styling */
+.submitting_btn{
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.submitting_btn:hover {
+    border-color: #007bff;
+    background-color: #fff;
+    color: #007bff;
+}
+
+.submitting_btn:after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, #007bff 10%, transparent 10.01%);
+    background-size: 10% 10%;
+    transition: all 0.3s;
+    opacity: 0;
+}
+  
+.submitting_btn:active:after {
+    opacity: 1;
+    transition: 0s;
+    animation: sparkle 1s infinite linear;
+}
+  
+@keyframes sparkle {
+    0% { background-position: 50% 50%; }
+    100% { background-position: 0% 0%; }
+}
+.close_btn{
+    background-color: red;
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+  
+
+
+  

@@ -1,0 +1,214 @@
+body{
+    background-image: url('./images/oranespectralline.jpg');
+}
+/*
+.registerstddiv{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.stdregisterform{
+    border: 1px solid orange;
+    padding: 50px 10px;
+    margin: 0px 100px;
+    backdrop-filter: blur(2px);
+    color: rgb(91, 248, 0);
+    box-sizing: border-box;
+    width: 800px;
+    height:900px ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+.stdregisterform input{
+    height: 40px;
+    width: 380px;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    padding: 5px 20px;
+    margin: 5px 20px 5px 100px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+.stdregisterform select{
+    height: 60px;
+    width: 420px;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    padding: 5px 20px;
+    margin: 5px 20px 5px 100px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    transition: all .3s ease;
+    overflow: hidden;
+}
+.stdregisterform button{
+    height: 40px;
+    width: 380px;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    border: none;
+    background: radial-gradient(rgb(183, 0, 255),black);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 2px 2px 0px #e0c445;
+    position: relative;
+    left: 140px;
+}
+
+
+
+
+ h1{
+    position: relative;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e0c445;
+}
+
+input:focus {
+    border-bottom: 2px solid #e0c445;
+}
+
+
+
+
+input:focus{
+    border-color: #ece3b9;
+}
+
+
+
+
+label{
+    position: relative;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #160101;
+    transition: all .3s ease;
+    }
+.stdregisterform input:focus + label, .stdregisterform input:valid + label{
+    font-size: 11px;
+    top: -5px;
+    }
+.stdregisterform input:focus + label{
+    color: blue;
+    }
+
+
+button:hover{
+    background: #e0c445;
+    color: #333;
+}
+*/
+
+.registerstddiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-up 0.5s ease-out; /* Animation for sliding up */
+}
+
+.containers,.container {
+    width: 800px;
+    border: 2px solid transparent;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.stdregisterform {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stdregisterform h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.stdregisterform .form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stdregisterform input[type="text"],
+.stdregisterform input[type="email"],
+.stdregisterform input[type="date"],
+.stdregisterform select,
+.stdregisterform input[type="file"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+.stdregisterform .select_course{
+    margin-left: 0;
+    width: 50.5%;
+}
+.stdregisterform .select_batch{
+    margin-right: 0;
+    width: 50.5%;
+}
+
+.stdregisterform input[type="text"]:focus,
+.stdregisterform input[type="email"]:focus,
+.stdregisterform input[type="date"]:focus,
+.stdregisterform select:focus,
+.stdregisterform input[type="file"]:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Animation for scaling */
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
