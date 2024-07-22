@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" >
+        {% csrf_token %}
+        <label for="">Student: <input value="{{id}}" type="text"  name="student"></label><br>
+        <label for="">Date: <input value="{{today}}" type="text" name="date"></label><br>
+        <label for="">Status
+            <select name="status">
+                <option value=""></option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+        </label>
+        <input type="submit" value="Add Attendance">
+    </form>
+</body>
+</html>

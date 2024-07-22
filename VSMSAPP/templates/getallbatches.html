@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for b in data %}
+       <div class="info">
+            <p>Batch Name: {{b.id}}. {{b.Batch_name}}</p>
+            <p>Course Name: {{b.course}}</p>
+
+        </div>
+        
+        
+    {% endfor %}
+    {% for m in messages %}
+    <p>{{m}}</p>
+    {% endfor %}
+</body>
+</html>
